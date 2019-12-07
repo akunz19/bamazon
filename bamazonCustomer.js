@@ -58,7 +58,6 @@ function selectProduct() {
     ])
     .then(function(answer) {
       try {
-        console.log("you selected", answer);
         idSelected = answer.idSelected; //stores answer in global variable
         getQuantity(idSelected);
       } catch (error) {
@@ -79,7 +78,6 @@ function getQuantity(id) {
     ])
     .then(function(answer) {
       try {
-        console.log(answer.qty, id);
         connection.query(
           "select * from products where item_id = ?",
           id,
