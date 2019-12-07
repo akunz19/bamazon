@@ -51,7 +51,7 @@ function selectProduct() {
     .prompt([
       {
         type: "list",
-        message: "Welcome to Bamazon! Please select a product",
+        message: "Welcome to Bamazon! Please select a product:",
         choices: itemObjs,
         name: "idSelected"
       }
