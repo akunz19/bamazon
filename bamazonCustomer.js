@@ -115,7 +115,7 @@ function updateQuantity() {
         if (err) {
           throw err;
         }
-        console.log("Congratulations! You purchased was successful!");
+        console.log("Congratulations! You purchase was successful!");
         connection.end();
       }
     );
